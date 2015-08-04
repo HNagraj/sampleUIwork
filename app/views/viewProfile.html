@@ -1,0 +1,145 @@
+<div class="{{brandName}}Container" ng-controller="authCntrl">
+  <portalheader></portalheader>
+  <div class="bodyContainer clearfix">
+    <sidemenu></sidemenu>
+    <div id="section">
+
+      <div class="editUmSection">
+        <h4 class="sectionMainHeader" style="margin-bottom: 20px">USER DETAILS :<br></h4>
+        <div class="editumForm">
+          <form name="htmlform">
+            <table>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <label>User id :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="User_id" maxlength="50" size="30">
+                </td>
+                <td class="tableSpacing">
+                  &nbsp;
+                </td>
+
+                <td valign="top">
+                  <label>Brand :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="Brand" maxlength="50" size="30">
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <label>First Name :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="first_name" maxlength="50" size="30">
+                </td>
+
+
+                <td class="tableSpacing">
+                  &nbsp;
+                </td>
+                <td valign="top">
+                  <label>Last Name :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="last_name" maxlength="50" size="30">
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top">
+                  <label>Gender :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="Gender" maxlength="80" size="30">
+                </td>
+
+                <td class="tableSpacing">
+                  &nbsp;
+                </td>
+                <td valign="top">
+                  <label>Email Address :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="email" maxlength="80" size="30"><br>
+                </td>
+
+              </tr>
+
+              <tr>
+                <td valign="top">
+                  <label>State :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="State" maxlength="80" size="30">
+                </td>
+
+                <td class="tableSpacing">
+                  &nbsp;
+                </td>
+                <td valign="top">
+                  <label>City :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="City" maxlength="80" size="30">
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top">
+                  <label>Zip code :</label>
+                </td>
+                <td valign="top">
+                  <input  type="text" name="Zip code" maxlength="30" size="30">
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div><br>
+
+        <div class="umGrid1">
+          <h4 class="sectionMainHeader" style="margin-bottom: 20px"> DEVICES :</h4>
+          <table style="float:left;margin-right:10%">
+            <tr>
+              <th>ios</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Clark</td>
+              <td><a ui-sref="deviceInfo">Info</a></td>
+            </tr>
+            <tr>
+              <td>Louis</td>
+              <td><a ui-sref="deviceInfo">Info</a></td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <th>Android</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Clark</td>
+              <td><a ui-sref="deviceInfo">Info</a></td>
+            </tr>
+            <tr>
+              <td>Louis</td>
+              <td><a ui-sref="deviceInfo">Info</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="delete">
+          <h4 class="sectionMainHeader" style="margin-bottom: 20px">DELETE / RESET PASSWORD :</h4>
+          <p>Delete user account with all data associated with it/Send an email with a link to reset password.<br></p>
+          <input type="submit" value="delete" class="custBtn" />
+          <input type="submit" value="Reset Password" class="custBtn"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <portalfooter></portalfooter>
+</div>

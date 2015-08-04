@@ -1,0 +1,38 @@
+<div class="{{brandName}}Container" ng-controller="authCntrl">
+  <portalheader></portalheader>
+  <div class="bodyContainer clearfix">
+    <sidemenu></sidemenu>
+    <div id="section">
+      <div class="umSection">
+        <div class="userSearchSection">
+          <h4 class="sectionMainHeader">USER MANAGEMENT</h4>
+          <form class="umSearchForm">
+            <div class="formControl">
+              <label>Search user by Email </label>
+              <input type="text" value="" />
+            </div>
+            <input type="submit" value="Search" class="custBtn"/>
+          </form>
+        </div>
+        <div class="umGrid">
+          <h4 class="sectionHeader"> RESULTS</h4>
+          <table>
+            <tr>
+              <th>User Accounts</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>example@abc.com</td>
+              <td><a ui-sref="viewProfile">UAA</a></td>
+            </tr>
+            <tr>
+              <td>lksldasd@abc.com</td>
+              <td><a ui-sref="viewProfile">SOCIAL</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <portalfooter></portalfooter>
+</div>

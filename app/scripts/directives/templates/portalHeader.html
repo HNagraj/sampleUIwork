@@ -1,0 +1,15 @@
+<div id="header" class="header-container fossilPage">
+  <div class="logoText">
+    <a ui-sref="fossil"><img src="images/fossil-logo.png" /></a>
+  </div>
+  <nav>
+    <ul class="headerMenuList">
+      <li>
+        <p ng-show="userName" class="lblUsername"> {{" Hi, "+userName}}</p>
+      </li>
+      <li>
+        <a ng-click="signout()">Sign Out</a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,13 @@
+<div id="sidebar" class="side" xmlns="http://www.w3.org/1999/html">
+  <nav>
+    <!--<div>
+      <h3 class="menuLink" ng-repeat="scope in userScopes">
+        <a ui-sref="fossil">{{scope}}</a>
+      </h3>
+    </div>-->
+    <h3 class="menuLink"><a ui-sref-active="menuLinkActive" ng-disabled="true" ui-sref="brandMessaging">Brand messaging</a></h3>
+    <h3 class="menuLink"><a ui-sref-active="menuLinkActive" ng-disabled="true" ng-class="umClassActive" ui-sref="um">User Management</a></h3>
+    <h3 id="menuLink" class="menuLink"><a ui-sref-active="menuLinkActive" ui-sref="setup">Brand Setup</a></h3>
+    <h3 id="uamLink" class="menuLink"><a  ui-sref-active="menuLinkActive" ng-class="uamClassActive" ui-sref="uam">User Access Management</a></h3>
+  </nav>
+</div>

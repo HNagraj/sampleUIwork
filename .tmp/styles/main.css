@@ -1,0 +1,800 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* styles updated */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+/* Breakpoints */
+.caption-shadow-dir {
+  text-shadow: 2px 2px 2px black; }
+
+.caption-shadow-blur {
+  text-shadow: 0px 0px 20px black, 0px 0px 20px black; }
+
+
+/* Button styles */
+/* Footer */
+/* Fixed width elements */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  display:block;
+// background-image: url("../img/intel1.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+// background-color: #000;
+  margin:0px;
+  padding:0px;
+}
+
+.byline {
+  color:black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  float: right;
+  margin: 53px 83px 0px 16px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+
+#header{
+  background-color:#FAFAFF;
+  text-transform:uppercase;
+  overflow:hidden;
+  color:#000;
+}
+#header nav  ul li a{
+  font-weight:bold;
+  font-size: 18px;
+}
+#header .logoText{
+  float:left;
+  padding-left:3%;
+  padding-top:10px;
+  padding-bottom:10px;
+  overflow:hidden;
+}
+#header .logoText img{
+  border-radius:50%;
+  float:left;
+  display:block
+}
+#header .logoText span{
+  float:left;
+  display:block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:18px;
+  margin:10px;
+  font-weight:bold;
+  margin-top:50px;
+}
+#sidebar h1,h2,h3{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:18px;
+  margin: 0px;
+}
+
+#sidebar{
+  color:#000;
+  /* height:943px; */
+  float:left;
+  padding:70px 0px 0px px;
+  text-align: middle;
+  margin-top:3%;
+  text-transform:uppercase;
+}
+#sidebar nav{
+  margin-left:50px;
+  width:100%;
+}
+#sidebar nav a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  font-family: inherit;
+  color: #000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 12px;
+  cursor:pointer;
+}
+#sidebar nav h2 a{
+  font-size: 18px;
+  padding-left: 0px;
+}
+#sidebar .menuLink a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+}
+#sidebar nav a.menuLinkActive{
+  color: #ffffff;
+  background: #000000;
+}
+.container {
+  width: 100%
+}
+#section{
+  float:left;
+  text-transform:uppercase;
+  width:70%;
+  margin-top:3%;
+  margin-left: 70px;
+  min-height: 500px;
+}
+#section iframe{
+  color:white;
+  text-align:center;
+  width: 100%;
+  height: 600px;
+  position:relative;
+  /* height:auto; */
+  margin:1%;
+  border:0px;
+
+  /* min-height:554px; */
+}
+
+
+
+.header-container {
+  color: white;
+  transition: all 2s ease;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+.animate .header-container {
+  opacity: 1;
+  top: 0px;
+}
+
+.header-container .wrapper {
+  width: 100%;
+}
+
+.header-container nav {
+  float: right;
+  /*width: 300px;*/
+  padding-right: 5%;
+  list-style:none;
+  /*padding-top: 28px;*/ }
+
+.header-container nav ul li{
+  list-style:none;
+}
+.header-container nav a {
+  display: block;
+  margin-bottom: 1px;
+  padding: 51px 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+#sidebar nav a:hover{
+  color:grey;}
+
+#header nav a:hover{
+  color: grey;
+  text-transform: uppercase;
+
+}
+
+
+.header-container ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul {
+  margin: 0 0 0 50px;
+  padding: 0px;
+}
+
+.logo {
+  width:12%;
+  margin: 20px 0px 10px 70px; }
+
+
+
+#copyright {
+  color:#000;
+}
+/*Footer styles*/
+.footer-container {
+  padding: 0px;
+  clear:both;
+  text-align:center;
+  z-index: 100;
+  font-size: 18px;
+  margin-bottom: 0px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #000;
+  position: relative;
+  margin-top:1%;
+}
+
+footer{
+  background-color:#FAFAFF;
+  overflow:hidden;
+  padding:20px 0px;
+}
+
+.footer-container .copy {
+  float: left;
+  width: auto;
+  padding-left: 100px; }
+
+.show{
+  display:block;
+}
+.hide{
+  display:none;
+}
+footer .footerLinks{
+  list-style:none;
+  float:right;
+  padding-right:100px;
+  margin:0px;
+}
+footer .footerLinks li{
+  list-style:none;
+  display:inline-block;
+  vertical-align:top;
+  margin-left:20px;
+}
+footer .footerLinks li a{
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+}
+#section .clientInfo{
+  width:80%;
+  margin:0px auto;
+}
+.clientInfo form{
+  margin-top:30px;
+}
+.clientInfo form label{
+  width:230px;
+  float:left;
+}
+
+/* For diesel Styles */
+.dieselContainer{
+  font-family: Helvetica, Arial, sans-serif;
+}
+.dieselContainer #header .logoText img{
+  border-radius: 0px;
+}
+.dieselContainer footer{
+  background: #f4f4f4;
+}
+.dieselContainer #header{
+  background: #f4f4f4;
+  opacity: 0.5;
+}
+/* Michel Kors Styles*/
+.mkContainer{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.mkContainer #header{
+  background: #fff;
+  opacity: 0.5;
+}
+.mkContainer #sidebar,.mkContainer #sidebar nav a{
+  color: #fff;
+}
+.mkContainer #header .logoText img {
+  margin-top: 12px;
+  border-radius: 0px;
+}
+.mkContainer #header .logoText span {
+  margin-top: 35px;
+}
+.underConstructionImg{
+  margin:0 auto;
+  width: 60%;
+  display: block;
+}
+
+/* Styles for user access management */
+.userSearchSection,.uamGrid {
+  width: 80%;
+  margin: 0 auto;
+}
+.uamHeading{
+  font-size: 22px;
+  margin: 0px;
+  font-weight: bold;
+  margin-top: 14px;
+}
+.uamSearchForm{
+  margin-top: 20px;
+}
+.uamSearchForm .formControl{
+  margin: 20px 0px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.uamSearchForm .formControl label{
+  width: 200px;
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+}
+.uamSearchForm .formControl input[type="radio"]{
+  vertical-align: sub;
+}
+.uamSearchForm .formControl input[type="text"]{
+  display: block;
+  float: left;
+  padding: 3px;
+}
+.uamSearchForm input[type="submit"]{
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 14px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  border: none;
+  cursor: pointer;
+}
+/* Search results grid */
+.uamGrid{
+  margin: 40px auto;
+}
+.uamGrid table{
+  border:1px solid #000;
+  width: 60%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+}
+.uamGrid table tr th,.uamGrid table tr td{
+  padding: 10px;
+  border-top:1px solid #000;
+}
+.uamGrid table tr td,.uamGrid table tr th{
+  border-right: 1px solid #000;
+}
+.uamGrid table tr td:nth-child(2){
+  text-align: center;
+}
+.uamGrid table tr:nth-child(even){
+  background: #dddddd;
+}
+.uamGrid table tr:nth-child(1){
+  background: none;
+}
+.mkContainer .uamGrid,.mkContainer .userSearchSection{
+  color: #ffffff;
+}
+.mkContainer .uamGrid table{
+  color:#000;
+}
+.dieselContainer .uamGrid,.dieselContainer .userSearchSection{
+  color: #ffffff;
+}
+.dieselContainer .uamGrid table{
+  color:#000;
+}
+.dieselContainer #sidebar,.dieselContainer #sidebar nav a{
+  color: #fff;
+}
+.uamSearchForm .formControl span{
+  vertical-align: middle;
+  font-size: 15px;
+}
+/* Edit Uam Section */
+.editUamSection{
+  width: 80%;
+  margin: 0 auto;
+}
+.mkContainer .editUamSection,.dieselContainer .editUamSection{
+  color: #ffffff;
+}
+.edituamForm .formControl{
+  margin: 20px 0px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.edituamForm .formControl label{
+  width: 220px;
+  display: inline-block;
+  float: left;
+}
+.edituamForm .formControl input[type="text"]{
+  display: block;
+  float: left;
+  padding: 3px;
+}
+.edituamForm input[type="submit"]{
+  width: auto;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+}
+.edituamForm select{
+  min-height: 130px;
+  overflow: hidden;
+  width: 100px;
+  float: left;
+}
+.edituamForm select option{
+  padding: 5px;
+}
+.edituamForm .btnEditScope{
+  float: left;
+  margin: 20px 35px;
+}
+
+/* Fossil Landing Page styles */
+.fossilInnerContainer{
+  width: 100%;
+  margin: 0 auto;
+}
+.fossilLandingContent {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.fossilLandingContent img,.fossilLandingContent a{
+  width: 1070px;
+}
+.textElementsWrapper{
+  position: absolute;
+  top:100px;
+}
+/* Diesel Landing Page Styles */
+
+.dieselInnerContainer{
+  width: 100%;
+  margin: 0 auto;
+}
+.dieselLandingContent {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.dieselLandingContent img,.dieselLandingContent a{
+  width: 1070px;
+  height:560px;
+  float:right;
+  margin:1%;
+}
+
+/* MK Landing Page styles */
+.mkInnerContainer{
+  width: 100%;
+  margin: 0 auto;
+}
+.mkLandingContent {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.mkLandingContent img,.mkLandingContent a{
+  margin:1%;
+}
+.textelementsWrapper {
+  position: absolute;
+  top: 100px;
+
+}
+.textelementsWrapper h2 {
+  font-size:38px;
+  margin:0px;
+}
+.textelementsWrapper h3,h4,h5,h6 {
+  font-size: 30px;
+  margin: 0px;
+}
+.textelementsWrapper h3{
+  color:pink;
+}
+.textelementsWrapper h5{
+  color:grey;
+}
+
+.headerMenuList{
+  margin-top:35px;
+}
+.headerMenuList li{
+  display: inline-block;
+  margin-left: 10px;
+}
+.headerMenuList li p{
+  text-transform: none;
+}
+.headerMenuList li a{
+  cursor: pointer;
+}
+.textElementsWrapper h2{
+  font-weight: bold;
+}
+.bodyContainer{
+  width: 100%;
+}
+.lblUsername{
+  font-size: 18px;
+}
+.sectionHeader{
+  font-weight: bold;
+  font-size: 16px;
+}
+.sectionMainHeader{
+  font-weight: bold;
+  font-size: 22px;
+}
+.uamGrid table tr th{
+  text-align: center;
+}
+.lblSearchType{
+  font-size: 15px;
+  padding-left: 3px;
+  padding-right: 10px;
+}
+#sidebar nav div h3:first-child{
+  margin-top: 0px;
+}
+.custBtn{
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.clientScopesFormControl span{
+  padding-right: 10px;
+}
+/* by srinivas*/
+/* umGrid1 styles for UM */
+
+.umGrid1{
+  margin: 40px auto;
+}
+.umGrid1 table{
+  border:1px solid #000;
+  width: 20%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+}
+.umGrid1 table tr th,.umGrid1 table tr td{
+  padding: 10px;
+  border-top:1px solid #000;
+}
+.umGrid1 table tr td{
+  border-right: 1px solid #000;
+}
+.umGrid1 table tr td:nth-child(2){
+  text-align: center;
+}
+.umGrid1 table tr th:nth-child(1){
+  text-align: left;
+}
+.umGrid1 table tr:nth-child(even){
+  background: #dddddd;
+}
+.umGrid1 table tr:nth-child(1){
+  background: none;
+}
+.mkContainer .umGrid1,.mkContainer .userSearchSection{
+  color: #ffffff;
+}
+.mkContainer .umGrid1 table{
+  color:#000;
+}
+.dieselContainer .umGrid1,.dieselContainer .userSearchSection{
+  color: #ffffff;
+}
+.dieselContainer .umGrid1 table {
+  color: #000;
+}
+
+/* Styles for user management */
+.userSearchSection,.umGrid {
+  width: 80%;
+  margin: 0 auto;
+}
+.umHeading{
+  font-size: 18px;
+  margin: 0px;
+  margin-top: 14px;
+}
+.umSearchForm{
+  margin-top: 20px;
+}
+.umSearchForm .formControl{
+  margin: 20px 0px;
+  font-size: 15px;
+  overflow: hidden;
+}
+.umSearchForm .formControl label{
+  width: 200px;
+  display: inline-block;
+  float: left;
+}
+.umSearchForm .formControl input[type="radio"]{
+  vertical-align: sub;
+}
+.umSearchForm .formControl input[type="text"]{
+  display: block;
+  float: left;
+  padding: 3px;
+}
+.umSearchForm input[type="submit"]{
+  width: 80px;
+  padding: 3px;
+  cursor: pointer;
+}
+/* Search results grid */
+.umGrid{
+  margin: 40px auto;
+}
+.umGrid table{
+  border:1px solid #000;
+  width: 50%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+}
+.umGrid table tr th,.umGrid table tr td{
+  padding: 10px;
+  border-top:1px solid #000;
+}
+.umGrid table tr td{
+  border-right: 1px solid #000;
+}
+.umGrid table tr td:nth-child(2){
+  text-align: center;
+}
+.umGrid table tr th:nth-child(1){
+  text-align: left;
+}
+.umGrid table tr:nth-child(even){
+  background: #dddddd;
+}
+.umGrid table tr:nth-child(1){
+  background: none;
+}
+.mkContainer .umGrid,.mkContainer .userSearchSection{
+  color: #ffffff;
+}
+.mkContainer .umGrid table{
+  color:#000;
+}
+.dieselContainer .umGrid,.dieselContainer .userSearchSection{
+  color: #ffffff;
+}
+.dieselContainer .umGrid table{
+  color:#000;
+}
+.dieselContainer #sidebar,.dieselContainer #sidebar nav a{
+  color: #fff;
+}
+.umSearchForm .formControl span{
+  vertical-align: text-bottom;
+}
+.tableSpacing{
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.editUmSection{
+  width:80%;
+  margin: 0 auto;
+}

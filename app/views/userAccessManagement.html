@@ -1,0 +1,51 @@
+<div class="{{brandName}}Container" ng-controller="authCntrl">
+  <portalheader></portalheader>
+  <div class="bodyContainer clearfix">
+    <sidemenu></sidemenu>
+    <div id="section">
+      <div class="uamSection">
+        <div class="userSearchSection">
+          <h4 class="sectionMainHeader">user access management</h4>
+          <form class="uamSearchForm">
+            <div class="formControl">
+              <label> Search user by  </label>
+              <input type="radio" value="email" ng-model="searchType" name="searchType" /><span class="lblSearchType">Email</span>
+              <input type="radio" value="scope" ng-model="searchType" name="searchType" /><span class="lblSearchType">Scope</span>
+            </div>
+            <div class="formControl" ng-show="searchType=='email'">
+              <label>Search Text </label>
+              <input type="text" ng-model="emailId" value="" />
+            </div>
+            <div class="formControl clientScopesFormControl" ng-show="searchType=='scope'">
+              <label> Client Scopes  </label>
+                <span ng-repeat="scope in userScopess">
+                    <input type="checkbox" value="{{scope}}" ng-checked="selectedScopes.indexOf(scope)>-1" ng-click="scopeSelection(scope)">
+                    {{scope}}
+                </span>
+            </div>
+            <input type="submit" value="Search" ng-click="searchUsers()" class="btnSearch" />
+          </form>
+        </div>
+        <div class="uamGrid">
+          <p class="sectionHeader">Search Results</p>
+          <table>
+            <tr>
+              <th><a href="" ng-click="predicate = 'userName';reverse=!reverse">Users Email</a></th>
+              <th>Users Scope</th>
+              <th>Edit Link</th>
+            </tr>
+            <tr ng-repeat="user in searchResults.records | orderBy:predicate:!reverse">
+              <td>{{user.userName}}</td>
+              <td>{{user.scopes}}</td>
+              <td><a ui-sref="updateUAM({userName:user.userName})" ng-click="getUserId(user.userId)">Edit Scope</a></td>
+            </tr>
+          </table>
+          <dir-pagination-controls on-page-change="pageChanged(newPageNumber)"></dir-pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+  <portalfooter></portalfooter>
+</div>
+
+

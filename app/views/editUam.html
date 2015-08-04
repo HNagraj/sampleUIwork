@@ -1,0 +1,44 @@
+<div class="{{brandName}}Container" ng-controller="authCntrl">
+  <portalheader></portalheader>
+  <div class="bodyContainer clearfix">
+    <sidemenu></sidemenu>
+    <div id="section">
+      <div class="editUamSection">
+        <h4 class="sectionMainHeader">Edit the scope for the user</h4>
+        <div class="edituamForm">
+          <form>
+            <div class="formControl">
+              <label>Email </label>
+              <label>{{userName}} </label>
+            </div>
+            <div class="formControl">
+              <label>Client Scope </label>
+              <label>Current Scope </label>
+            </div>
+            <div class="clearfix">
+              <select class="selectClientScope" size="5" ng-model="clientScopesSelected.scopes" name="clientScope" multiple>
+                <option value="scope">Scope</option>
+                <option value="email">Email</option>
+                <option value="openId">OpenId</option>
+                <option value="plus">Plus</option>
+                <option value="messaging">Messaging</option>
+              </select>
+              <div class="btnEditScope">
+                <input type="button" class="custBtn" ng-click="addClientScope()" value=">>" /><br/><br/>
+                <input type="button" class="custBtn" ng-click="removeCurrentScope()" value="<<" />
+              </div>
+              <select class="selectCurrentScope" ng-model="currentScopes.scopes" size="2" name="currentScope" multiple>
+                <option ng-disabled="true" ng-repeat="item in defaultScopes" value="{{item}}">{{item}}</option>
+                <option ng-repeat="addeditem in clientScopesSelected.scopes" value="{{addeditem}}">{{addeditem}}</option>
+              </select>
+            </div>
+            <input type="submit" value="Save" class="btnSaveUam custBtn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <portalfooter></portalfooter>
+</div>
+
+
